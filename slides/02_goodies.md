@@ -43,6 +43,10 @@ for (let i = 0; i < 3; i++) {
 ```js
 const inc = num => { return num + 1; };
 const add = (a, b) => a + b;
+
+const that = this;
+const fn = () => { console.log(this === that); }; // true
+
 ```
 
 --
